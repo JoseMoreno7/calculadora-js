@@ -29,3 +29,10 @@ Una calculadora científica web creada con **HTML**, **TailwindCSS** y **JavaScr
 1. Clona este repositorio:
 ```bash
 git clone https://github.com/JoseMoreno7/calculadora-js.git
+
+---
+
+## 🌐 Publicación
+
+Puedes ver el proyecto en vivo aquí:  
+🔗 [josemoreno7.github.io/calculadora-js/]
