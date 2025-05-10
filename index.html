@@ -1,0 +1,74 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora Científica</title>
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center p-4">
+
+  <div class="bg-gray-800 rounded-2xl shadow-lg p-6 w-full max-w-md">
+    <div class="mb-4">
+      <input id="display" type="text" class="w-full text-right text-3xl bg-black text-green-400 p-4 rounded-lg" disabled />
+    </div>
+
+    <div class="grid grid-cols-4 gap-4">
+      <!-- Fila 1 -->
+      <button class="btn-func">C</button>
+      <button class="btn-func">⌫</button>
+      <button class="btn-op">%</button>
+      <button class="btn-op">/</button>
+
+      <!-- Fila 2 -->
+      <button class="btn-num">7</button>
+      <button class="btn-num">8</button>
+      <button class="btn-num">9</button>
+      <button class="btn-op">*</button>
+
+      <!-- Fila 3 -->
+      <button class="btn-num">4</button>
+      <button class="btn-num">5</button>
+      <button class="btn-num">6</button>
+      <button class="btn-op">-</button>
+
+      <!-- Fila 4 -->
+      <button class="btn-num">1</button>
+      <button class="btn-num">2</button>
+      <button class="btn-num">3</button>
+      <button class="btn-op">+</button>
+
+      <!-- Fila 5 -->
+      <button class="btn-func">√</button>
+      <button class="btn-num">0</button>
+      <button class="btn-num">.</button>
+      <button class="btn-equals bg-green-500 hover:bg-green-600 text-white font-bold">=</button>
+
+      <!-- Fila 6 - funciones científicas -->
+      <button class="btn-func">π</button>
+      <button class="btn-func">x²</button>
+      <button class="btn-func">^</button>
+      <button class="btn-func">log</button>
+
+      <!-- Fila 7 -->
+      <button class="btn-func">ln</button>
+      <button class="btn-func">sin</button>
+      <button class="btn-func">cos</button>
+      <button class="btn-func">tan</button>
+
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+  <style>
+    .btn-num, .btn-op, .btn-func {
+      @apply bg-gray-700 hover:bg-gray-600 text-white py-3 text-xl rounded-lg;
+    }
+  </style>
+
+</body>
+</html>
