@@ -5,7 +5,8 @@ Una calculadora científica web creada con **HTML**, **TailwindCSS** y **JavaScr
 ✅ Operaciones básicas: suma, resta, multiplicación, división  
 ✅ Porcentaje, raíz cuadrada, π  
 ✅ Funciones científicas: potencias, logaritmos, trigonometría  
-✅ Interfaz responsiva y moderna con TailwindCSS  
+✅ Interfaz responsiva y moderna con TailwindCSS
+✅ Boton de historial con maximo 12 operaciones
 
 ---
 
