@@ -21,7 +21,7 @@ Una calculadora científica web creada con **HTML**, **TailwindCSS** y **JavaScr
 
 ## 📸 Vista previa
 
-![screenshot](./img/calculadora.PNG)
+![screenshot](./img/calculadora-v2.jpeg)
 
 ---
 
@@ -30,10 +30,21 @@ Una calculadora científica web creada con **HTML**, **TailwindCSS** y **JavaScr
 1. Clona este repositorio:
 ```bash
 git clone https://github.com/JoseMoreno7/calculadora-js.git
-
+```
 ---
 
 ## 🌐 Publicación
 
 Puedes ver el proyecto en vivo aquí:  
 🔗 [josemoreno7.github.io/calculadora-js/]
+
+## 👨‍💻 Autor
+
+Desarrollado por **José Moreno**  
+🔗 [Portafolio: www.morenodevs.com](https://josemoreno7.github.io/MorenoDevs/)
+
+---
+
+## 📝 Licencia
+
+Este proyecto está bajo la Licencia MIT.
