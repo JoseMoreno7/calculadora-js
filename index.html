@@ -6,77 +6,78 @@
   <title>Calculadora Científica</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4">
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+  <div class="flex-grow flex items-center justify-center p-4">
+    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 w-full max-w-md">
+      <div class="mb-4">
+        <input id="display" type="text" class="w-full text-right text-3xl bg-black text-green-400 p-4 rounded-lg" disabled />
+      </div>
 
-  <div class="bg-gray-800 rounded-2xl shadow-lg p-6 w-full max-w-md ">
-    <div class="mb-4">
-      <input id="display" type="text" class="w-full text-right text-3xl bg-black text-green-400 p-4 rounded-lg" disabled />
-    </div>
+      <button id="btn-historial" class="w-full bg-gray-900 hover:bg-gray-700 text-gray-400 py-2 mb-4 rounded-lg">Historial</button>
+      
+      <div id="historial" class="bg-gray-900 p-4 rounded-lg mb-4 hidden max-h-60 overflow-y-auto">
+        <div id="historial-lista" class="grid grid-cols-3 gap-2"></div>
+      </div>
 
-    <button id="btn-historial" class="w-full bg-gray-900 hover:bg-gray-700 text-gray-400 py-2 mb-4 rounded-lg">Historial</button>
-    
-    <div id="historial" class="bg-gray-900 p-4 rounded-lg mb-4 hidden max-h-60 overflow-y-auto">
-      <div id="historial-lista" class="grid grid-cols-3 gap-2"></div>
-    </div>
+      <div class="grid grid-cols-4 gap-4">
+        <button class="btn-func">C</button>
+        <button class="btn-func">⌫</button>
+        <button class="btn-op">%</button>
+        <button class="btn-op">/</button>
 
-    <div class="grid grid-cols-4 gap-4">
-      <button class="btn-func">C</button>
-      <button class="btn-func">⌫</button>
-      <button class="btn-op">%</button>
-      <button class="btn-op">/</button>
+        <button class="btn-num">7</button>
+        <button class="btn-num">8</button>
+        <button class="btn-num">9</button>
+        <button class="btn-op">*</button>
 
-      <button class="btn-num">7</button>
-      <button class="btn-num">8</button>
-      <button class="btn-num">9</button>
-      <button class="btn-op">*</button>
+        <button class="btn-num">4</button>
+        <button class="btn-num">5</button>
+        <button class="btn-num">6</button>
+        <button class="btn-op">-</button>
 
-      <button class="btn-num">4</button>
-      <button class="btn-num">5</button>
-      <button class="btn-num">6</button>
-      <button class="btn-op">-</button>
+        <button class="btn-num">1</button>
+        <button class="btn-num">2</button>
+        <button class="btn-num">3</button>
+        <button class="btn-op">+</button>
 
-      <button class="btn-num">1</button>
-      <button class="btn-num">2</button>
-      <button class="btn-num">3</button>
-      <button class="btn-op">+</button>
+        <button class="btn-func">√</button>
+        <button class="btn-num">0</button>
+        <button class="btn-num">.</button>
+        <button class="btn-equals bg-green-500 hover:bg-green-600 text-white font-bold">=</button>
 
-      <button class="btn-func">√</button>
-      <button class="btn-num">0</button>
-      <button class="btn-num">.</button>
-      <button class="btn-equals bg-green-500 hover:bg-green-600 text-white font-bold">=</button>
+        <button class="btn-func">π</button>
+        <button class="btn-func">x²</button>
+        <button class="btn-func">^</button>
+        <button class="btn-func">log</button>
 
-      <button class="btn-func">π</button>
-      <button class="btn-func">x²</button>
-      <button class="btn-func">^</button>
-      <button class="btn-func">log</button>
-
-      <button class="btn-func">ln</button>
-      <button class="btn-func">sin</button>
-      <button class="btn-func">cos</button>
-      <button class="btn-func">tan</button>
-
+        <button class="btn-func">ln</button>
+        <button class="btn-func">sin</button>
+        <button class="btn-func">cos</button>
+        <button class="btn-func">tan</button>
+      </div>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="text-center text-sm text-gray-600 dark:text-gray-300 p-4">
+  <footer class="text-center text-sm text-gray-600 dark:text-gray-300 p-4 mt-auto">
     <p>
       © <span id="year"></span> 
       <strong class="text-blue-400 dark:text-blue-500">
         <a href="http://josemoreno7.github.io/MorenoDevs/" target="_blank" class="underline hover:text-blue-700 dark:hover:text-blue-300">
           MorenoDevs
         </a>
-      </strong>| Todos los derechos reservados.
+      </strong> | Todos los derechos reservados.
     </p>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
   <style>
     .btn-num, .btn-op, .btn-func {
       @apply bg-gray-700 hover:bg-gray-600 text-white py-3 text-xl rounded-lg;
     }
   </style>
-
 </body>
 </html>
